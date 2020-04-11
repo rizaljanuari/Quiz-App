@@ -23,9 +23,19 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     var questions = [
-      "What's your favorite food?",
-      "What's your favorite drink?",
-      "What's your favorite snack?",
+      //its called Maps
+      {
+        "questionText": "What's your favorite food?",
+        "answer": ["Rendang", "Semur jengkol", "Telur ceplok", "Mie indomie"]
+      },
+      {
+        "questionText": "What's your favorite drink?",
+        "answer": ["Sprite", "Teh Kotak", "Amidis", "Aqua"]
+      },
+      {
+        "questionText": "What's your favorite snack?",
+        "answer": ["Kentang Goreng", "Chiki Balls", "Taro", "Tahu bulat"]
+      }
     ];
     return MaterialApp(
       home: Scaffold(
