@@ -47,6 +47,7 @@ class _MyAppState extends State<MyApp> {
             Question(
               questions[_questionIndex]["questionText"],
             ),
+            //the three dots (...) are Dart operator syntax called Spread Operator. Its mean they take a list and pull all the values in the list out of it andd add them to the surrounding list as individual values.
             ...(questions[_questionIndex]["answer"] as List<String>)
                 .map((answer) {
               return Answer(_answerQuestion, answer);
